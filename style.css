@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primaryColor: rgb(13, 42, 66);
+    --secondaryColor: rgb(19, 106, 156);
+    --mainWhite: #ffff;
+    --bgColor: rgba(214, 212, 212, 0.568);
+    --bodyColor: #f6f6f6;
+    --mainTransition: transform .3s;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bgColor);
+}
+
+.contact-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box {
+    position: relative;
+    height: 150px;
+    width: 250px;
+    margin: 0 20px;
+}
+
+.box_i {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: var(--mainTransition);
+    background-color: var(--primaryColor);
+}
+
+.box_info {
+    position: absolute;
+    font-size: smaller;
+    font-weight: bold;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    color: var(--mainWhite);
+    background-color: var(--secondaryColor);
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+i {
+    color: var(--mainWhite);
+    font-size: 32px;
+}
+
+.box:hover .box_i {
+    transform: translateY(-30px);
+}
+
+@media (max-width:700px) {
+    .contact-box {
+        flex-direction: column;
+    }
+
+    .box {
+        margin: 20px 0;
+    }
+}
