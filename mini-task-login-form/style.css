@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primaryColor: rgb(13, 42, 66);
+    --secondaryColor: rgb(61, 120, 187);
+    --mainWhite: #ffff;
+    --mainBlack: rgb(22, 21, 21);
+    --mainGreen: rgb(14, 180, 69);
+    --bgColor: rgba(214, 212, 212, 0.568);
+    --bodyColor: #cfcdcd;
+    --mainTransition: background-color .3s;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--mainWhite);
+    background-color: var(--primaryColor);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+}
+
+.login-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--mainBlack);
+    height: 350px;
+    width: 350px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.form_head h1 {
+    color: var(--bodyColor);
+    font-weight: lighter;
+    margin-bottom: 40px;
+}
+
+input:focus {
+
+    border: 1px solid var(--mainGreen);
+    width: 220px;
+    border-radius: 30px;
+}
+
+input {
+    background-color: transparent;
+    border: 1px solid var(--secondaryColor);
+    border-radius: 30px;
+    margin-bottom: 30px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #c4bfbf;
+    width: 150px;
+    transition: width .3s ease-in-out;
+    cursor: pointer;
+    outline: none;
+}
+
+button {
+    border-radius: 30px;
+    padding: 10px 30px;
+    text-align: center;
+    color: var(--mainWhite);
+    cursor: pointer;
+    transition: var(--mainTransition);
+    background-color: transparent;
+    border: 1px solid var(--mainGreen);
+
+}
+
+button:hover {
+    background-color: var(--mainGreen);
+}
