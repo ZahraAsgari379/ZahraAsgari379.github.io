@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body id="mode">
+    <div class="web-mode">
+      <h4 id="status">Dark Mode is OFF</h4>
+
+      <label class="switch">
+        <p class="p-light">light</p>
+        <p class="p-dark">dark</p>
+        <input type="checkbox" onchange="checkmodefunc(this)">
+
+        <span class="slider round"></span>
+      </label>
+    </div>
+
+
+    <script>
+      const checkmode = document.getElementsByTagName("input");
+      const status = document.getElementById("status");
+
+      function checkmodefunc(e) {
+        if (e.checked) {
+          status.innerText = "Dark Mode is ON";
+          document.getElementById("mode").style.backgroundColor = "#000000";
+          document.getElementById("mode").style.color = "#ffffff";
+        } else {
+          status.innerText = "Dark Mode is OFF";
+          document.getElementById("mode").style.backgroundColor = "#ffffff";
+          document.getElementById("mode").style.color = "#000000";
+        }
+      }
+    </script>
+  </body>
+</html>
