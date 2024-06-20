@@ -27,7 +27,14 @@
                 age--;
                 months += 12;
             }
+
             let days = currentDate.getDate() - dob.getDate();
+            if (days < 0) {
+                months--;
+                let daysInCurrentMonth = new Date(currentDate.getFullYear(), currentDate.getMonth() + 1, 0).getDate();
+                days = daysInCurrentMonth - dob.getDate() + currentDate.getDate();
+            }
+
 
             document.querySelector('.calculated-text').textContent = `years: ${age} / months: ${months} / days: ${days}`;
         });
