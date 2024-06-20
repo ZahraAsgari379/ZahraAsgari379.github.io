@@ -12,13 +12,13 @@
     <div class="container">
         <h1>Age calculator</h1>
         <p class="calculated-text">years : 0 months : 0 days : 0</p>
-        <input class="age-input" type="text" placeholder="yyyy-mm-dd">
+        <input class="age-input" type="text" placeholder="yyyy mm dd">
         <button class="calculating-btn">calculating</button>
     </div>
     <script>
         document.querySelector('.calculating-btn').addEventListener('click', function () {
                 let inputDate = document.querySelector('.age-input').value;
-                let dob = new Date(inputDate);
+                let dob = new Date(inputDate.replace("_", ""));
                 let currentDate = new Date();
 
                 let age = currentDate.getFullYear() - dob.getFullYear();
