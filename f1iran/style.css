@@ -287,7 +287,6 @@ figcaption {
 .social {
     background: -webkit-linear-gradient(0deg, #ffab2a 0, #ffec8e 100%);
     width: 320px;
-    margin: 0 auto;
     padding: 30px 0;
     border-radius: 10px;
     box-shadow: 0 0 10px #c5c5c5;
@@ -671,7 +670,10 @@ footer {
         display: block;
     }
     .social-login-classification {
+        display: flex;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
     }
     .social {
         margin: 0 auto;
