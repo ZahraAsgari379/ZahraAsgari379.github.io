@@ -195,6 +195,7 @@ figcaption {
 .analysis-title a {
     font-size: 0.75rem;
 }
+
 .news-title h3 {
     color: gray;
 }
@@ -655,29 +656,45 @@ footer {
         width: 100%;
     }
 
-    
+    .news-detail,
+    .analysis-detail {
+        font-size: 8px;
+        margin: 8px 0;
+        display: flex;
+        gap: 8px;
+    }
+
+    .news h1,
+    .analysis h1 {
+        font-weight: 800;
+        font-size: 2rem;
+    }
+
     .navbar-list {
         display: none;
     }
-    
+
     .navbar-item {
         display: block;
         text-align: center;
         padding: 10px;
     }
-    
+
     .toggle {
         display: block;
     }
+
     .social-login-classification {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
+
     .social {
         margin: 0 auto;
     }
+
     .copy-right p {
         text-align: center;
         line-height: 2rem;
