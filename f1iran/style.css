@@ -695,4 +695,16 @@ footer {
         text-align: center;
         line-height: 2rem;
     }
+
+    .news-title h4 a,
+    .analysis-title a {
+        font-size: 1.25rem;
+        background-color: var(--secondaryColor);
+        padding: 8px;
+        border-radius: 4px;
+        color: var(--primaryColor);
+        display: flex;
+        gap: 4px;
+
+    }
 }
