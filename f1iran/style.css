@@ -650,22 +650,28 @@ footer {
         width: 100%;
     }
 
-    .copy-right p {
-        text-align: center;
-        line-height: 2rem;
-    }
-
+    
     .navbar-list {
         display: none;
     }
-
+    
     .navbar-item {
         display: block;
         text-align: center;
         padding: 10px;
     }
-
+    
     .toggle {
         display: block;
+    }
+    .social-login-classification {
+        justify-content: center;
+    }
+    .login {
+        margin: 0 auto;
+    }
+    .copy-right p {
+        text-align: center;
+        line-height: 2rem;
     }
 }
