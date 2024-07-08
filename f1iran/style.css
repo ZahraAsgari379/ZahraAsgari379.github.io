@@ -164,7 +164,7 @@ figcaption {
 .news h1,
 .analysis h1 {
     font-weight: 800;
-    font-size: 18px;
+    font-size: 2rem;
 }
 
 .news {
@@ -191,6 +191,10 @@ figcaption {
     color: var(--primaryColor);
 }
 
+.news-title h4 a,
+.analysis-title a {
+    font-size: 0.75rem;
+}
 .news-title h3 {
     color: gray;
 }
@@ -237,9 +241,10 @@ figcaption {
 
 .news-detail,
 .analysis-detail {
+    font-size: 14px;
     margin: 10px 0;
     display: flex;
-    gap: 30px;
+    gap: 12px;
 }
 
 .analysis-detail i {
@@ -249,7 +254,7 @@ figcaption {
 .news-text,
 .analysis-text {
     font-weight: 600;
-    font-size: 18px;
+    font-size: 1.25rem;
 }
 
 .news-text a,
@@ -281,8 +286,8 @@ figcaption {
 /* social */
 .social {
     background: -webkit-linear-gradient(0deg, #ffab2a 0, #ffec8e 100%);
-    /* width: (100% - 60px); */
     width: 320px;
+    margin: 0 auto;
     padding: 30px 0;
     border-radius: 10px;
     box-shadow: 0 0 10px #c5c5c5;
@@ -630,6 +635,7 @@ footer {
         gap: 8px;
     }
 
+
     .nav {
         width: 100%;
         display: flex;
@@ -667,7 +673,7 @@ footer {
     .social-login-classification {
         justify-content: center;
     }
-    .login {
+    .social {
         margin: 0 auto;
     }
     .copy-right p {
