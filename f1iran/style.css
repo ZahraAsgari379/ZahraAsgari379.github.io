@@ -191,11 +191,6 @@ figcaption {
     color: var(--primaryColor);
 }
 
-.news-title h4 a,
-.analysis-title a {
-    font-size: 0.75rem;
-}
-
 .news-title h3 {
     color: gray;
 }
@@ -206,9 +201,10 @@ figcaption {
 
 .news-title h4 a,
 .analysis-title a {
+    font-size: 1.25rem;
     background-color: var(--secondaryColor);
-    padding: 4px;
-    border-radius: 3px;
+    padding: 8px;
+    border-radius: 4px;
     color: var(--primaryColor);
     display: flex;
     gap: 4px;
