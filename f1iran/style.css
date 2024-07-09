@@ -605,6 +605,10 @@ footer {
         justify-items: center;
         margin: 0 auto;
     }
+    
+    .social {
+        margin-bottom: 24px;
+    }
 
     .footer,
     .footer-list,
