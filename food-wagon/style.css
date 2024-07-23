@@ -500,6 +500,7 @@ header {
 }
 
 .details_card-tb button {
+    text-wrap: nowrap;
     width: 100%;
 }
 
@@ -739,7 +740,7 @@ th {
     }
 
     .featured-restaurants-container,
-        .popular-items-container {
+    .popular-items-container {
         width: 50%;
     }
 
@@ -833,6 +834,10 @@ th {
         width: 100%;
     }
 
+    .deliver-address {
+        font-size: 0.75rem;
+    }
+
     .flash-deals {
         flex-direction: column;
         align-items: center;
@@ -861,6 +866,10 @@ th {
 
     .details_card {
         height: 200px;
+    }
+
+    .details_card-tb button {
+        font-size: 0.75rem;
     }
 
     .cta {
