@@ -157,10 +157,10 @@ header {
 
 .bottom input {
     position: relative;
-    width: 80%;
+    width: 70%;
     height: 32px;
     padding: 24px 36px;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 700;
     align-items: center;
     background-color: rgb(231, 228, 228);
@@ -731,169 +731,174 @@ th {
     }
 
     .bottom input {
+        
+    }
+
+    .bottom input {
+        width: 60%;
         padding: 30px 2px 23px 30px;
     }
 
-    .order-card {
-        width: 100%;
-    }
-
-    .popular-items {
-        width: 50%;
-    }
-
-    .featured-restaurants-container,
-    .popular-items-container {
-        width: 50%;
-    }
-
-    .featured-restaurants-container,
-    .popular-items-container,
-    .features {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        margin: 0 auto;
-        justify-content: center;
-    }
-
-    .order-now {
-        width: 55%;
-    }
-
-    .details_card-t h2 {
-        font-size: 0.9rem;
-    }
-
-    .details_card-tb button {
-        text-wrap: nowrap;
-        padding: 4px 8px;
-    }
-
-    .details_card-tb {
-        width: 50%;
-        padding: 20px;
-        gap: 20px;
-    }
-
-    .details_card-t {
-        gap: 6px;
-    }
-
-    .details_card-i img {
-        height: 200px;
-    }
-
-    .footer_info {
-        flex-direction: column;
-        text-align: center;
-        gap: 40px;
-
-    }
-
-    td {
-        padding-right: 12px;
-        text-wrap: nowrap;
-    }
-
-    .info {
-        width: 100%;
-        text-wrap: nowrap;
-    }
-
-    .info td {
-        width: 100%;
-        padding-right: 40px;
-        text-wrap: nowrap;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-
-    .nav,
-    .deliver-address,
-    .footer,
-    table,
-    .footer_cities,
-    .info,
-    .input input,
-    .button button,
-    .header_container,
-    .details_card {
-        width: 90%;
-    }
-
-    .header_container {
-        padding: 20px 0;
-    }
-
-    .header h1 {
-        font-size: 2.6rem;
-
-    }
-
-    .header p {
-        font-size: 0.7rem;
-    }
-
-    .bottom {
-        width: 100%;
-    }
-    .bottom input,
     .bottom button {
-        font-size: 0.8rem;
+        width: 40%;
     }
 
-    .flash-deals {
-        flex-direction: column;
-        align-items: center;
+        .order-card {
+            width: 100%;
+        }
+
+        .popular-items {
+            width: 50%;
+        }
+
+        .featured-restaurants-container,
+        .popular-items-container {
+            width: 50%;
+        }
+
+        .featured-restaurants-container,
+        .popular-items-container,
+        .features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin: 0 auto;
+            justify-content: center;
+        }
+
+        .order-now {
+            width: 55%;
+        }
+
+        .details_card-t h2 {
+            font-size: 0.9rem;
+        }
+
+        .details_card-tb button {
+            text-wrap: nowrap;
+            padding: 4px 8px;
+        }
+
+        .details_card-tb {
+            width: 50%;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .details_card-t {
+            gap: 6px;
+        }
+
+        .details_card-i img {
+            height: 200px;
+        }
+
+        .footer_info {
+            flex-direction: column;
+            text-align: center;
+            gap: 40px;
+
+        }
+
+        td {
+            padding-right: 12px;
+            text-wrap: nowrap;
+        }
+
+        .info {
+            width: 100%;
+            text-wrap: nowrap;
+        }
+
+        .info td {
+            width: 100%;
+            padding-right: 40px;
+            text-wrap: nowrap;
+        }
     }
 
-    .popular-items {
-        width: 99%;
+    @media only screen and (max-width: 600px) {
+
+        .nav,
+        .deliver-address,
+        .footer,
+        table,
+        .footer_cities,
+        .info,
+        .input input,
+        .button button,
+        .header_container,
+        .details_card {
+            width: 90%;
+        }
+
+        .header_container {
+            padding: 20px 0;
+        }
+
+        .header h1 {
+            font-size: 2.6rem;
+
+        }
+
+        .header p {
+            font-size: 0.7rem;
+        }
+
+        .bottom {
+            width: 100%;
+        }
+
+        .flash-deals {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .popular-items {
+            width: 99%;
+        }
+
+        .featured-restaurants {
+            width: 60%;
+        }
+
+        .featured-restaurants-container {
+            grid-template-columns: 1fr;
+        }
+
+        .order-now {
+            width: 95%;
+        }
+
+        .foods {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .details_card {
+            height: 200px;
+        }
+
+        .details_card-tb button {
+            font-size: 0.75rem;
+        }
+
+        .cta {
+            padding: 40px 0;
+            background: var(--primaryColor);
+
+        }
+
+        .cta_text-button {
+            width: 20%;
+        }
+
+        .cta_text-button h2 {
+            font-size: 1.4rem;
+            width: 300px;
+        }
+
+        .copy-right {
+            font-size: 0.65rem;
+
+        }
     }
-
-    .featured-restaurants {
-        width: 60%;
-    }
-
-    .featured-restaurants-container {
-        grid-template-columns: 1fr;
-    }
-
-    .order-now {
-        width: 95%;
-    }
-
-    .foods {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .details_card {
-        height: 200px;
-    }
-
-    .details_card-tb button {
-        font-size: 0.75rem;
-    }
-
-    .cta {
-        padding: 40px 0;
-        background: var(--primaryColor);
-
-    }
-
-    .cta_text-button {
-        width: 20%;
-    }
-
-    .cta_text-button h2 {
-        font-size: 1.4rem;
-        width: 300px;
-    }
-
-    .copy-right {
-        font-size: 0.65rem;
-
-    }
-}
