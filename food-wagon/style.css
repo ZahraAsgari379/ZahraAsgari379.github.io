@@ -162,6 +162,7 @@ header {
     padding: 24px 36px;
     font-size: 1rem;
     font-weight: 700;
+    align-items: center;
     background-color: rgb(231, 228, 228);
 }
 
@@ -170,7 +171,6 @@ header {
     align-items: center;
     gap: 8px;
     padding: 16px 24px;
-    font-weight: 800;
     text-wrap: nowrap;
     border-radius: 8px;
     font-weight: 700;
@@ -730,7 +730,6 @@ th {
 
     .bottom input {
         padding: 30px 2px 23px 30px;
-        font-size: 0.75rem;
     }
 
     .order-card {
@@ -836,6 +835,7 @@ th {
 
     .bottom {
         width: 100%;
+        font-size: 0.7rem;
     }
 
     .flash-deals {
