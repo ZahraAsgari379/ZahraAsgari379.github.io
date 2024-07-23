@@ -803,11 +803,12 @@ th {
     }
 
     .info,
-        .footer_cities {
+    .footer_cities {
         padding-right: 20px;
     }
 
     .info td {
+        width: 100%;
         padding-right: 40px;
         margin: auto;
         text-wrap: nowrap;
