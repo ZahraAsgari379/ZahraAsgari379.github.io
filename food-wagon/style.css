@@ -614,6 +614,7 @@ th {
 
 }
 
+
 .footer_info {
     display: flex;
     align-items: center;
@@ -797,19 +798,15 @@ th {
 
     }
 
-    td {
-        padding-right: 12px;
-        text-wrap: nowrap;
-    }
-
     .info,
     .footer_cities {
         padding-right: 20px;
     }
 
-    .info td {
+    .info td,
+    .footer_cities td {
         width: 100%;
-        padding-right: 40px;
+        padding-right: 20px;
         margin: auto;
         text-wrap: nowrap;
     }
