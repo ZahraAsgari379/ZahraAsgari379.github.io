@@ -737,7 +737,7 @@ th {
 
     .bottom button {
         width: 40%;
-        
+
 
     }
 
@@ -838,7 +838,8 @@ th {
 
     }
 
-    .header p {
+    .header p,
+    .details_card-tb button {
         font-size: 0.7rem;
     }
 
@@ -876,10 +877,6 @@ th {
         height: 200px;
     }
 
-    .details_card-tb button {
-        font-size: 0.75rem;
-    }
-
     .cta {
         padding: 40px 0;
         background: var(--primaryColor);
@@ -894,8 +891,13 @@ th {
         font-size: 1.4rem;
         width: 300px;
     }
+
     td {
+        width: 100%;
         font-size: 0.6rem;
+    }
+    tr {
+        width: 100%;
     }
 
     .copy-right {
