@@ -792,7 +792,7 @@ th {
 
     .footer_info {
         flex-direction: column;
-        text-align: center;
+        align-items: start;
         gap: 40px;
 
     }
@@ -802,14 +802,14 @@ th {
         text-wrap: nowrap;
     }
 
-    .info {
-        width: 50%;
-        margin: 0 auto;
+    .info,
+        .footer_cities {
+        padding-right: 40px;
     }
 
     .info td {
-        width: 100%;
-        padding-right: 40px;
+        padding-right: 80px;
+        margin: auto;
         text-wrap: nowrap;
     }
 }
@@ -894,10 +894,7 @@ th {
 
     td {
         width: 100%;
-        font-size: 0.6rem;
-    }
-    tr {
-        width: 100%;
+        font-size: 0.65rem;
     }
 
     .copy-right {
