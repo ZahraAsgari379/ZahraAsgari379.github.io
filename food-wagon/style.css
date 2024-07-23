@@ -722,10 +722,11 @@ th {
     .deliver-address {
         overflow: hidden;
         text-overflow: ellipsis;
+        justify-content: center;
     }
 
     .bottom input {
-        padding: 24px 2px 24px 30px;
+        padding: 28px 2px 28px 30px;
         font-size: 0.75rem;
     }
 
@@ -792,11 +793,11 @@ th {
 
     .info {
         width: 100%;
-        text-wrap: nowrap;
     }
 
     .info td {
         padding-right: 40px;
+        text-wrap: nowrap;
     }
 }
 
@@ -846,7 +847,6 @@ th {
     }
 
     .featured-restaurants-container {
-        display: grid;
         grid-template-columns: 1fr;
     }
 
@@ -877,9 +877,6 @@ th {
         font-size: 1.4rem;
         width: 300px;
     }
-
-
-
 
     .copy-right {
         font-size: 0.65rem;
