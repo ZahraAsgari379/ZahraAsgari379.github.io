@@ -731,11 +731,14 @@ th {
     }
 
     .bottom input {
+        width: 60%;
         padding: 30px 2px 23px 30px;
     }
 
     .bottom button {
-        width: 120px;
+        width: 40%;
+        
+
     }
 
     .order-card {
@@ -800,8 +803,8 @@ th {
     }
 
     .info {
-        width: 100%;
-        text-wrap: nowrap;
+        width: 50%;
+        margin: 0 auto;
     }
 
     .info td {
@@ -890,6 +893,9 @@ th {
     .cta_text-button h2 {
         font-size: 1.4rem;
         width: 300px;
+    }
+    td {
+        font-size: 0.6rem;
     }
 
     .copy-right {
