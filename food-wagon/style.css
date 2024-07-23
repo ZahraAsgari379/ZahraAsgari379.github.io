@@ -731,13 +731,11 @@ th {
     }
 
     .bottom input {
-        width: 60%;
         padding: 30px 2px 23px 30px;
     }
 
     .bottom button {
-        width: 40%;
-        padding: 16px 8px;
+        width: 120px;
     }
 
     .order-card {
