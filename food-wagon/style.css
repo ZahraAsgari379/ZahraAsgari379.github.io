@@ -170,7 +170,7 @@ header {
     display: flex;
     align-items: center;
     gap: 8px;
-    padding: 16px 24px;
+    padding: 16px 20px;
     text-wrap: nowrap;
     border-radius: 8px;
     font-weight: 700;
@@ -835,6 +835,9 @@ th {
 
     .bottom {
         width: 100%;
+    }
+    .bottom input,
+    .bottom button {
         font-size: 0.7rem;
     }
 
