@@ -697,7 +697,7 @@ th {
     }
 
     .details_card-t h2 {
-        font-size: 1.rem;
+        font-size: 1rem;
     }
 
     .details_card-tb {
@@ -733,8 +733,12 @@ th {
         width: 100%;
     }
 
-    .popular-items,
-    .featured-restaurants {
+    .popular-items {
+        width: 50%;
+    }
+
+    .featured-restaurants-container,
+        .popular-items-container {
         width: 50%;
     }
 
@@ -751,6 +755,29 @@ th {
         width: 55%;
     }
 
+    .details_card-t h2 {
+        font-size: 0.9rem;
+    }
+
+    .details_card-tb button {
+        text-wrap: nowrap;
+        padding: 4px 8px;
+    }
+
+    .details_card-tb {
+        width: 50%;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .details_card-t {
+        gap: 6px;
+    }
+
+    .details_card-i img {
+        height: 200px;
+    }
+
     .footer_info {
         flex-direction: column;
         text-align: center;
@@ -765,6 +792,7 @@ th {
 
     .info {
         width: 100%;
+        text-wrap: nowrap;
     }
 
     .info td {
@@ -834,29 +862,6 @@ th {
     .details_card {
         height: 200px;
     }
-
-    .details_card-t h2 {
-        font-size: 1rem;
-    }
-
-    .details_card-tb button {
-        padding: 8px 12px;
-    }
-
-    .details_card-tb {
-        width: 50%;
-        padding: 20px;
-        gap: 20px;
-    }
-
-    .details_card-t {
-        gap: 6px;
-    }
-
-    .details_card-i img {
-        height: 200px;
-    }
-
 
     .cta {
         padding: 40px 0;
