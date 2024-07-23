@@ -804,11 +804,11 @@ th {
 
     .info,
         .footer_cities {
-        padding-right: 40px;
+        padding-right: 20px;
     }
 
     .info td {
-        padding-right: 80px;
+        padding-right: 40px;
         margin: auto;
         text-wrap: nowrap;
     }
