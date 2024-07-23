@@ -891,9 +891,9 @@ th {
     .info {
         width: 60%;
     }
-    
+
     td {
-        width: 100%;
+        width: 60px;
         font-size: 0.65rem;
     }
 
