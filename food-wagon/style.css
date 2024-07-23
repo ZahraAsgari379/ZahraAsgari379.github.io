@@ -818,7 +818,6 @@ th {
     .footer,
     table,
     .footer_cities,
-    .info,
     .input input,
     .button button,
     .header_container,
@@ -888,11 +887,16 @@ th {
         font-size: 1.4rem;
         width: 300px;
     }
-
+    
+    .info {
+        width: 60%;
+    }
+    
     td {
         width: 100%;
         font-size: 0.65rem;
     }
+
 
     .copy-right {
         font-size: 0.65rem;
