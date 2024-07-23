@@ -1,0 +1,877 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+:root {
+    --primaryColor: #FFB30E;
+    --secoudyColor: rgba(241, 114, 40, 1);
+    --mainBlack: #212121;
+    --mainWhite: #ffff;
+    --mainGreen: rgb(60, 184, 48);
+    --borderColor: #cfcdcd;
+    --mainGray: #ADADAD;
+    --gray: #424242;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--mainWhite);
+}
+
+.btn {
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    text-wrap: nowrap;
+
+}
+
+.box-shadow {
+    box-shadow: 0 1px 1px 0 var(--primaryColor), 0 1px 7px 0 var(--primaryColor);
+}
+
+/* ---header--- */
+header {
+    width: 100%;
+}
+
+.nav {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+    margin: 0 auto;
+}
+
+.nav i {
+    color: var(--primaryColor);
+}
+
+.form {
+    display: flex;
+    gap: 8px;
+}
+
+.form input {
+    position: relative;
+    padding: 8px 0 8px 28px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 800;
+    width: 140px;
+}
+
+.s-icon {
+    position: absolute;
+    display: inline-block;
+    z-index: 9999;
+    height: 10px;
+    line-height: 2;
+    margin: 7px;
+    text-wrap: nowrap;
+}
+
+.form_btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    font-weight: 800;
+    border-radius: 8px;
+    color: var(--primaryColor);
+    background-color: var(--mainWhite);
+}
+
+.deliver-address {
+    text-wrap: nowrap;
+}
+
+.address {
+    font-weight: 700;
+}
+
+.header {
+    font-display: flex;
+    background: linear-gradient(90deg, rgba(255, 174, 0, 1) 0%, rgba(255, 138, 0, 1) 100%);
+}
+
+.header_container {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 80px 0;
+    margin: 0 auto;
+}
+
+.header h1 {
+    font-size: 3.5rem;
+    margin-bottom: 12px;
+    color: var(--mainWhite);
+
+}
+
+.header p {
+    font-size: 0.89rem;
+    color: var(--gray);
+    font-weight: 500;
+}
+
+.order-card {
+    padding: 18px;
+    width: 60%;
+    border-radius: 10px;
+    background-color: var(--mainWhite);
+}
+
+.top {
+    display: flex;
+    gap: 8px;
+    color: var(--gray);
+    padding-bottom: 12px;
+}
+
+.tab {
+    padding: 12px;
+}
+
+.tab:hover {
+    color: var(--secoudyColor);
+    background-color: rgba(241, 114, 40, 0.1);
+}
+
+.bottom {
+    width: 100%;
+}
+
+.bottom input {
+    position: relative;
+    width: 80%;
+    height: 32px;
+    padding: 24px 36px;
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: rgb(231, 228, 228);
+}
+
+.bottom button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 32px;
+    font-weight: 800;
+    border-radius: 8px;
+    font-weight: 700;
+    color: var(--mainWhite);
+    background: linear-gradient(90deg, rgba(255, 122, 122, 1) 0%, rgba(255, 138, 0, 1) 100%);
+}
+
+.m-icon {
+    position: absolute;
+    display: inline-block;
+    z-index: 9999;
+    height: 10px;
+    line-height: 2;
+    margin: 12px;
+    color: var(--primaryColor);
+}
+
+/* ---header--- */
+/* ---flash deals--- */
+.flash-deals {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.flash-deal_card img {
+    position: relative;
+    height: 220px;
+    width: 240px;
+    border-radius: 10px;
+}
+
+.discount {
+    position: absolute;
+    position: absolute;
+    display: inline-block;
+    z-index: 9999;
+    margin: -56px -1px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    border-radius: 0px 32px 0px 10px;
+    padding: 8px 18px 8px 8px;
+    background-color: var(--primaryColor);
+}
+
+.discount_percent {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.discount p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 500;
+    color: var(--mainWhite);
+}
+
+
+.flash-deal_card figcaption {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 12px 0;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+.flash-deal_card figcaption span {
+    width: fit-content;
+    padding: 8px 12px;
+    border-radius: 10px;
+    color: var(--secoudyColor);
+    background-color: rgba(241, 114, 40, 0.2);
+}
+
+/* ---flash deals--- */
+/* ---How does it work--- */
+.How-does-it-work {
+    text-align: center;
+    padding: 40px 0;
+    background: linear-gradient(90deg, rgba(255, 206, 103, 1) 0%, rgba(253, 237, 202, 1) 22%);
+}
+
+.features {
+    width: 70%;
+    display: flex;
+    gap: 20px;
+    padding-top: 40px;
+    margin: auto;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+
+.How-does-it-work h2,
+.feature i {
+    color: var(--secoudyColor);
+    font-size: 2rem;
+}
+
+.feature i {
+    font-size: 4rem;
+    padding-bottom: 1.5rem;
+}
+
+.feature p {
+    font-size: small;
+    padding: 8px;
+    color: var(--gray);
+}
+
+/* ---How does it work--- */
+/* ---popular items & featuredrestaurants--- */
+
+.popular-items,
+.featured-restaurants {
+    width: 70%;
+    padding: 40px 0;
+    margin: auto;
+}
+
+.popular-items h2,
+.featured-restaurants h2 {
+    text-align: center;
+    padding: 40px;
+}
+
+.popular-items-container {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.featured-restaurants-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.featured-restaurant {
+    margin-bottom: 34px;
+}
+
+.popular-item img {
+    width: 180px;
+    height: 180px;
+}
+
+.fr-img {
+    position: relative;
+    width: 220px;
+    height: 180px;
+}
+
+.popular-item figcaption {
+    font-size: 0.75rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.popular-item_loc {
+    font-size: 0.65rem;
+}
+
+.popular-item_loc,
+.restaurant_rate {
+    color: var(--primaryColor);
+}
+
+.order-now {
+    padding: 8px;
+    border-radius: 6px;
+    color: var(--mainWhite);
+    background-color: var(--secoudyColor);
+}
+
+.restaurant {
+    display: flex;
+    gap: 12px;
+    padding: 8px 0;
+}
+
+.restaurant_detail {
+    font-size: 0.75rem;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+}
+
+.restaurant_logo {
+    width: 40px;
+}
+
+.badge {
+    font-size: 0.65rem;
+    padding: 4px 6px;
+    border-radius: 8px;
+}
+
+.badge_close {
+    color: var(--secoudyColor);
+    background-color: rgba(241, 114, 40, 0.2);
+}
+
+.badge_open {
+    color: rgba(121, 185, 60, 1);
+    background-color: rgba(121, 185, 60, 0.2);
+}
+
+.featured_badge {
+    position: absolute;
+    display: inline-block;
+    margin: 16px -212px;
+
+    z-index: 999;
+}
+
+.badge_dis,
+.badge_time {
+    font-size: 0.9rem;
+    padding: 6px 8px;
+    margin-right: 6px;
+    color: var(--mainWhite);
+    background-color: var(--secoudyColor);
+}
+
+.badge_dis i,
+.badge_time i {
+    padding-right: 4px;
+}
+
+.badge_time {
+    background-color: var(--primaryColor);
+}
+
+/* ---popular items & featuredrestaurants--- */
+/* ---search by Food--- */
+
+.search-by-Food {
+    background-color: rgba(254, 250, 241, 1);
+}
+
+.search-by-Food h2 {
+    padding: 40px 0;
+}
+
+.search-by-Food-container {
+    width: 70%;
+    margin: auto;
+}
+
+.foods {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    text-align: center;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.foods figure img {
+    border-radius: 144px;
+    width: 160px;
+}
+
+.foods figcaption {
+    padding: 12px;
+}
+
+/* ---search by Food--- */
+/* ---details--- */
+
+.details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin: 40px 0;
+
+}
+
+.details_card {
+    width: 70%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.details_card-tb {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px;
+    gap: 60px;
+}
+
+.details_card-t {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.details_card-t span {
+    color: var(--primaryColor);
+}
+
+.details_card-t p {
+    font-size: 0.75rem;
+
+}
+
+.details_card-tb button {
+    width: 100%;
+}
+
+.details_card-i {
+    margin: auto;
+    width: 70%;
+
+}
+
+.details_card-i img {
+    height: 300px;
+    width: 100%;
+    padding: 0.1rem;
+    border-radius: 12px;
+}
+
+/* ---details--- */
+/* ---cta--- */
+
+.cta {
+    height: auto;
+    background-image: url(/image/2e9e26797a8c43063d042eeddc70b014.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    padding: 80px 0;
+
+}
+
+.cta_text-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin: 0 auto;
+    width: 30%;
+}
+
+.cta_text-button h2 {
+    font-size: 2rem;
+    text-align: center;
+    width: 420px;
+    color: var(--mainWhite);
+
+}
+
+.proceed-to-order {
+    width: 160px;
+    padding: 12px 16px;
+    color: var(--mainWhite);
+    background-color: #F17228;
+
+}
+
+/* ---cta--- */
+/* ---main--- */
+
+/* ---footer--- */
+footer {
+    height: outo;
+    font-size: 0.75rem;
+    font-weight: 100;
+    width: 100%;
+    color: var(--mainWhite);
+    background-color: var(--mainBlack);
+}
+
+.footer {
+
+    width: 70%;
+    margin: 0 auto;
+}
+
+table {
+    width: 100%;
+    text-align: left;
+}
+
+th {
+    padding: 24px 0;
+}
+
+td,
+td a,
+.social h4,
+.social h5 {
+    color: var(--mainGray);
+    padding: 4px 0;
+}
+
+.social h5,
+th {
+    font-size: 12px;
+}
+
+.social_icon i {
+    padding-right: 8px;
+    font-size: 1rem;
+    color: var(--gray);
+}
+
+.footer_cities,
+.footer_info {
+    width: 100%;
+    padding: 40px 0;
+    margin: 0 auto;
+    border-bottom: 1px solid var(--gray);
+
+}
+
+.footer_info {
+    display: flex;
+    align-items: center;
+}
+
+.info {
+    width: 60%;
+}
+
+.social {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.social_mailbox {
+    display: flex;
+    gap: 12px;
+}
+
+.input input {
+    position: relative;
+    background-color: var(--gray);
+    padding: 12px 36px;
+    border-radius: 6px;
+    border: none;
+    font-weight: 400;
+}
+
+.button button {
+    padding: 12px 24px;
+    border-radius: 6px;
+    background-color: var(--primaryColor);
+    color: var(--mainWhite);
+
+}
+
+.input i {
+    position: absolute;
+    padding: 12px;
+    color: var(--mainGray);
+    z-index: 10;
+}
+
+.copy-right {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0 40px;
+}
+
+
+
+/* ---footer--- */
+
+
+@media only screen and (max-width: 1290px) and (min-width: 601px) {
+    .featured-restaurants-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 1060px) and (min-width: 601px) {
+    .nav {
+        font-size: 0.9rem;
+        gap: 16px;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 1036px) and (min-width: 601px) {
+
+    .bottom input {
+        padding: 24px 2px 24px 30px;
+    }
+
+    .flash-deals,
+    .foods {
+        flex-wrap: wrap;
+    }
+
+    .details_card {
+        height: 200px;
+    }
+
+    .details_card-t h2 {
+        font-size: 1.rem;
+    }
+
+    .details_card-tb {
+        width: 50%;
+        padding: 20px;
+        gap: 30px;
+    }
+
+    .details_card-i img {
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .nav {
+        flex-direction: column;
+        gap: 16px;
+
+    }
+
+    .bottom input {
+        padding: 24px 2px 24px 30px;
+        font-size: 0.75rem;
+    }
+
+    .order-card {
+        width: 100%;
+    }
+
+    .popular-items-container,
+    .features {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    .order-now {
+        width: 55%;
+    }
+
+    .footer_info {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+
+    }
+
+    td {
+        padding-right: 12px;
+        text-wrap: nowrap;
+    }
+
+    .info {
+        width: 100%;
+    }
+
+    .info td {
+        padding-right: 40px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .nav,
+    .deliver-address,
+    .footer,
+    table,
+    .footer_cities,
+    .info,
+    .input input,
+    .button button,
+    .header_container,
+    .details_card {
+        width: 90%;
+    }
+
+
+
+    .deliver-address {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .header_container {
+        padding: 20px 0;
+    }
+
+    .header h1 {
+        font-size: 2.6rem;
+
+    }
+
+    .header p {
+        font-size: 0.7rem;
+    }
+
+    .bottom {
+        width: 100%;
+    }
+
+    .flash-deals {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .popular-items {
+        width: 99%;
+    }
+
+    .featured-restaurants {
+        width: 60%;
+    }
+
+    .featured-restaurants-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .order-now {
+        width: 95%;
+    }
+
+    .foods {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .details_card {
+        height: 200px;
+    }
+
+    .details_card-t h2 {
+        font-size: 1rem;
+    }
+
+    .details_card-tb button {
+        padding: 8px 12px;
+    }
+
+    .details_card-tb {
+        width: 50%;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .details_card-t {
+        gap: 6px;
+    }
+
+    .details_card-i img {
+        height: 200px;
+    }
+
+
+    .cta {
+        padding: 40px 0;
+        background: var(--primaryColor);
+
+    }
+
+    .cta_text-button {
+        width: 20%;
+    }
+
+    .cta_text-button h2 {
+        font-size: 1.4rem;
+        width: 300px;
+    }
+
+
+
+
+    .copy-right {
+        font-size: 0.65rem;
+
+    }
+}

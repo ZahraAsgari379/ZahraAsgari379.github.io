@@ -1,0 +1,30 @@
+@import "../sass-utils/mixins";
+
+@keyframes labelAnimated {
+  0% {
+    top: 12px;
+    color: red;
+    left: 48px;
+  }
+
+  50% {
+    top: -12px;
+    left: 48px;
+    color: blue;
+  }
+
+  100% {
+    top: -12px;
+    left: 8px;
+    color: green;
+  }
+}
+
+.form {
+  input {
+    background-image: url("/food-wagon/image/header/icons8-search-50.png");
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+  }
+}

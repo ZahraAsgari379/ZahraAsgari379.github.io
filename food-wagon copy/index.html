@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Wagon</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <div class="logo">
+                <img src="./image/header/image.png" alt="logo">
+            </div>
+            <div class="deliver-address">
+                <span>Deliver to:</span>
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>Current Location</span>
+                <span class="address">Mohammadpur Bus Stand, Dhaka</span>
+            </div>
+            <form class="form">
+                <i class="fa fa-search s-icon" aria-hidden="true"></i>
+                <input id="search" type="search" name="search" placeholder="Search Food">
+                <button class="btn box-shadow form_btn"><i class="fa fa-user" style='font-size:16px;'
+                        aria-hidden="true"></i> Login</button>
+            </form>
+        </nav>
+        <section class="header">
+            <div class="header_container">
+                <div class="header_title">
+                    <h1>Are you staving?</h1>
+                    <p>Within a few clicks, find meals that are accessible near you</p>
+                </div>
+                <div class="order-card">
+                    <div class="top">
+                        <div class="tab">
+                            <i class="fa fa-motorcycle" style="font-size: 1rem;" aria-hidden="true"></i>
+                            <span>Delivery</span>
+                        </div>
+                        <div class="tab">
+                            <i class="fa fa-shopping-bag" style="font-size: 0.9rem;" aria-hidden="true"></i>
+                            <span>Pickup</span>
+                        </div>
+                    </div>
+
+                    <div class="bottom">
+                        <form class="form">
+                            <i class="fa fa-map-marker m-icon" style="font-size: 1.5rem;" aria-hidden="true"></i>
+                            <input id="search" type="search" name="search" placeholder="enter your Address">
+                            <button class="btn"><i class="fa fa-search" aria-hidden="true"></i> Find Food</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="flash-deals">
+            <div class="flash-deal_card">
+                <figure>
+                    <img src="/image/flash deals/cdb116382058b00e58389f2026a151e3.png" alt="deals">
+                    <div class="discount">
+                        <p class="discount_percent">15</p>
+                        <p><span>%</span><span>Off</span></p>
+                    </div>
+                    <figcaption>
+                        Greys Vage
+                        <span>6 Days Remaining</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="flash-deal_card">
+                <figure>
+                    <img src="/image/flash deals/2c9300792e2c5c9794680200303842fc.png" alt="deals">
+                    <div class="discount">
+                        <p class="discount_percent">10</p>
+                        <p><span>%</span><span>Off</span></p>
+                    </div>
+                    <figcaption>
+                        Greys Vage
+                        <span>6 Days Remaining</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="flash-deal_card">
+                <figure>
+                    <img src="/image/flash deals/b375eef0a4a7029978858e46f9ac60a5.png" alt="deals">
+                    <div class="discount">
+                        <p class="discount_percent">25</p>
+                        <p><span>%</span><span>Off</span></p>
+                    </div>
+                    <figcaption>
+                        Greys Vage
+                        <span>7 Days Remaining</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="flash-deal_card">
+                <figure>
+                    <img src="/image/flash deals/e12502c9ce49df4aa1c5fb28f7ce1cb1.png" alt="deals">
+                    <div class="discount">
+                        <p class="discount_percent">20</p>
+                        <p><span>%</span><span>Off</span></p>
+                    </div>
+                    <figcaption>
+                        Greys Vage
+                        <span>8 Days Remaining</span>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+        <section class="How-does-it-work">
+            <h2>How does it work</h2>
+            <div class="features">
+                <div class="feature">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <span>Select location</span>
+                    <p>Choose the location where your food will be delivered.</p>
+                </div>
+                <div class="feature">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <span>Choose order</span>
+                    <p>Check over hundreds of menus to pick your favorite food</p>
+                </div>
+                <div class="feature">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <span>Pay advanced</span>
+                    <p>It's quick, safe, and simple. Select several methods of payment</p>
+                </div>
+                <div class="feature">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <span>Enjoy meals</span>
+                    <p>Food is made and delivered directly to your home.</p>
+                </div>
+            </div>
+        </section>
+        <section class="popular-items">
+            <h2>Popular items</h2>
+            <div class="popular-items-container">
+                <div class="popular-item">
+                    <figure>
+                        <img src="/image/popular items/27a9e484ea35e5d1ae9fd4e315d19710.png" alt="popular item">
+                        <figcaption>
+                            <span>Cheese Burger</span>
+                            <span class="popular-item_loc">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                Burger Arena
+                            </span>
+                            <span>$3.88</span>
+                            <button class="btn order-now">order now</button>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="popular-item">
+                    <figure>
+                        <img src="/image/popular items/f8f7734bf7c050e75f29cc1465405d97.png" alt="popular item">
+                        <figcaption>
+                            <span>Toffe’s Cake</span>
+                            <span class="popular-item_loc">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                Top Sticks
+                            </span>
+                            <span>$4.00</span>
+                            <button class="btn order-now">order now</button>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="popular-item">
+                    <figure>
+                        <img src="/image/popular items/1d7da0a098c5372fd5fa27a1c7dc62dc.png" alt="popular item">
+                        <figcaption>
+                            <span>Dancake</span>
+                            <span class="popular-item_loc">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                Cake World
+                            </span>
+                            <span>$1.99</span>
+                            <button class="btn order-now">order now</button>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="popular-item">
+                    <figure>
+                        <img src="/image/popular items/84dfc9c25373676dee733cd313834bab.png">
+                        <figcaption>
+                            <span>Crispy Sandwitch</span>
+                            <span class="popular-item_loc">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                Fastfood Dine
+                            </span>
+                            <span>$3.00</span>
+                            <button class="btn order-now">order now</button>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="popular-item">
+                    <figure>
+                        <img src="/image/popular items/b241045bd5cb443a27dac50c3cf76157.png" alt="popular item">
+                        <figcaption>
+                            <span>Thai Soup</span>
+                            <span class="popular-item_loc">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                Foody man
+                            </span>
+                            <span>$2.79</span>
+                            <button class="btn order-now">order now</button>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <section class="featured-restaurants">
+            <h2>Featured Restaurants</h2>
+            <div class="featured-restaurants-container">
+                <div class="featured-restaurant">
+                    <figure>
+                        <img class="fr-img" src="/image/Featured Restaurants/768e4761f91cfa5e06df9fa1f2019f1c.png"
+                            alt="Featured Restaurant">
+                        <div class="featured_badge">
+                            <span class="badge badge_dis">
+                                <i class='fa fa-tag' style='font-size:16px'></i>20% off
+                            </span>
+                            <span class="badge badge_time">
+                                <i class="fa fa-clock-o" style="font-size:16px"></i>Fast
+                            </span>
+                        </div>
+                        <figcaption>
+                            <div class="restaurant">
+                                <img class="restaurant_logo"
+                                    src="/image/Featured Restaurants/e5a06ccf04d4191dcd3976965887e2f8.png"
+                                    alt="Restaurant">
+                                <p class="restaurant_detail">
+                                    <span>Foodworld</span>
+                                    <span class="restaurant_rate">⭐46</span>
+                                </p>
+                            </div>
+                            <span class="badge badge_close">Opens tomorrow</span>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="featured-restaurant">
+                    <figure>
+                        <img class="fr-img" src="/image/Featured Restaurants/0888891bc9ef1d384a53aa5fa93d1e03.png"
+                            alt="Featured Restaurant">
+                        <div class="featured_badge">
+                            <span class="badge badge_dis">
+                                <i class='fa fa-tag' style='font-size:16px'></i>20% off
+                            </span>
+                            <span class="badge badge_time">
+                                <i class="fa fa-clock-o" style="font-size:16px"></i>Fast
+                            </span>
+                        </div>
+                        <figcaption>
+                            <div class="restaurant">
+                                <img class="restaurant_logo"
+                                    src="/image/Featured Restaurants/65ebaeb823c555a5e3b65cbc3f07f270.png"
+                                    alt="Restaurant">
+                                <p class="restaurant_detail">
+                                    <span>Pizzahub</span>
+                                    <span class="restaurant_rate">⭐20</span>
+                                </p>
+                            </div>
+                            <span class="badge badge_close">Opens tomorrow</span>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="featured-restaurant">
+                    <figure>
+                        <img class="fr-img" src="/image/Featured Restaurants/a3dd1721c3dd6b421f8bbe411174420d.png"
+                            alt="Featured Restaurant">
+                        <div class="featured_badge">
+                            <span class="badge badge_dis">
+                                <i class='fa fa-tag' style='font-size:16px'></i>20% off
+                            </span>
+                            <span class="badge badge_time">
+                                <i class="fa fa-clock-o" style="font-size:16px"></i>Fast
+                            </span>
+                        </div>
+                        <figcaption>
+                            <div class="restaurant">
+                                <img class="restaurant_logo"
+                                    src="/image/Featured Restaurants/da854e6c77acc67bfa1c621c373e4ffd.png"
+                                    alt="Restaurant">
+                                <p class="restaurant_detail">
+                                    <span>Donuts hut</span>
+                                    <span class="restaurant_rate">⭐20</span>
+                                </p>
+                            </div>
+                            <span class="badge badge_open">Open now</span>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="featured-restaurant">
+                    <figure>
+                        <img class="fr-img" src="/image/Featured Restaurants/3603774b4e393ca4f1825b435758ea3d.png"
+                            alt="Featured Restaurant">
+                        <div class="featured_badge">
+                            <span class="badge badge_dis">
+                                <i class='fa fa-tag' style='font-size:16px'></i>20% off
+                            </span>
+                            <span class="badge badge_time">
+                                <i class="fa fa-clock-o" style="font-size:16px"></i>Fast
+                            </span>
+                        </div>
+                        <figcaption>
+                            <div class="restaurant">
+                                <img class="restaurant_logo"
+                                    src="/image/Featured Restaurants/a19ff16fdbc2b554e32365380b33f504.png"
+                                    alt="Restaurant">
+                                <p class="restaurant_detail">
+                                    <span>Donuts hut</span>
+                                    <span class="restaurant_rate">⭐50</span>
+                                </p>
+                            </div>
+                            <span class="badge badge_open">Open now</span>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="featured-restaurant">
+                    <figure>
+                        <img class="fr-img" src="/image/Featured Restaurants/4b78821a727f6773cc9d38386fe81950.png"
+                            alt="Featured Restaurant">
+                        <div class="featured_badge">
+                            <span class="badge badge_dis">
+                                <i class='fa fa-tag' style='font-size:16px'></i>10% off
+                            </span>
+                            <span class="badge badge_time">
+                                <i class="fa fa-clock-o" style="font-size:16px"></i>Fast
+                            </span>
+                        </div>
+                        <figcaption>
+                            <div class="restaurant">
+                                <img class="restaurant_logo"
+                                    src="/image/Featured Restaurants/be207a75817c027b28a06637c1893d43.png"
+                                    alt="Restaurant">
+                                <p class="restaurant_detail">
+                                    <span>Ruby Tuesday</span>
+                                    <span class="restaurant_rate">⭐26</span>
+                                </p>
+                            </div>
+                            <span class="badge badge_open">Open now</span>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="featured-restaurant">
+                    <figure>
+                        <img class="fr-img" src="/image/Featured Restaurants/3607286f8a17153aa39f2b0913126c4b.png"
+                            alt="Featured Restaurant">
+                        <div class="featured_badge">
+                            <span class="badge badge_dis">
+                                <i class='fa fa-tag' style='font-size:16px'></i>25% off
+                            </span>
+                            <span class="badge badge_time">
+                                <i class="fa fa-clock-o" style="font-size:16px"></i>Fast
+                            </span>
+                        </div>
+                        <figcaption>
+                            <div class="restaurant">
+                                <img class="restaurant_logo"
+                                    src="/image/Featured Restaurants/d42b4928437a54496db6057e0c515090.png"
+                                    alt="Restaurant">
+                                <p class="restaurant_detail">
+                                    <span>Kuakata Fried Chicken</span>
+                                    <span class="restaurant_rate">⭐53</span>
+                                </p>
+                            </div>
+                            <span class="badge badge_open">Open now</span>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="featured-restaurant">
+                    <figure>
+                        <img class="fr-img" src="/image/Featured Restaurants/4b9b0f051c6c0c7928329fe5e05d25b9.png"
+                            alt="Featured Restaurant">
+                        <div class="featured_badge">
+                            <span class="badge badge_dis">
+                                <i class='fa fa-tag' style='font-size:16px'></i>10% off
+                            </span>
+                            <span class="badge badge_time">
+                                <i class="fa fa-clock-o" style="font-size:16px"></i>Fast
+                            </span>
+                        </div>
+                        <figcaption>
+                            <div class="restaurant">
+                                <img class="restaurant_logo"
+                                    src="/image/Featured Restaurants/5b74c69cc1d495ef155c4769d750b925.png"
+                                    alt="Restaurant">
+                                <p class="restaurant_detail">
+                                    <span>Red Square</span>
+                                    <span class="restaurant_rate">⭐45</span>
+                                </p>
+                            </div>
+                            <span class="badge badge_open">Open now</span>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="featured-restaurant">
+                    <figure>
+                        <img class="fr-img" src="/image/Featured Restaurants/f537c497c40af8f2427da7a8b445a725.png"
+                            alt="Featured Restaurant">
+                        <div class="featured_badge">
+                            <span class="badge badge_dis">
+                                <i class='fa fa-tag' style='font-size:16px'></i>10% off
+                            </span>
+                            <span class="badge badge_time">
+                                <i class="fa fa-clock-o" style="font-size:16px"></i>Fast
+                            </span>
+                        </div>
+                        <figcaption>
+                            <div class="restaurant">
+                                <img class="restaurant_logo"
+                                    src="/image/Featured Restaurants/2275f97a29df96fc810ae046bf7a5b62.png"
+                                    alt="Restaurant">
+                                <p class="restaurant_detail">
+                                    <span>Donuts hut</span>
+                                    <span class="restaurant_rate">⭐35</span>
+                                </p>
+                            </div>
+                            <span class="badge badge_open">Open now</span>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <section class="search-by-Food">
+            <section class="search-by-Food-container">
+                <h2>Search by Food</h2>
+                <div class="foods">
+                    <figure>
+                        <img src="/image/Search by Food/706528a0928fdc552f65b9a59e7ba2e1.png" alt="Food">
+                        <figcaption>Pizza</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="/image/Search by Food/3a72b6dc1da2c8027e0965fb980d621b.png" alt="Food">
+                        <figcaption>Burger</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="/image/Search by Food/2731ead33ace70db9151761fd0fc7010.png" alt="Food">
+                        <figcaption>Noodles</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="/image/Search by Food/a7f70dbd5149a7eb06a28af4203b1686.png" alt="Food">
+                        <figcaption>Sub-sandwich</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="/image/Search by Food/fb136bccab87be57fe2fc9772446f54d.png" alt="Food">
+                        <figcaption>Chowmein</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="/image/Search by Food/5c6f670c2d1e458f6aab2e2238167cfa.png" alt="Food">
+                        <figcaption>Steak</figcaption>
+                    </figure>
+                </div>
+            </section>
+        </section>
+        <section class="details">
+            <div class="details_card">
+                <div class="details_card-tb">
+                    <div class="details_card-t">
+                        <h2>Best deals <span>Crispy Sandwiches</span></h2>
+                        <p>Enjoy the large size of sandwiches. Complete
+                            perfect slice of sandwiches.</p>
+                    </div>
+                    <button class="btn proceed-to-order">Proceed to order <i class="fa fa-chevron-right"></i></button>
+                </div>
+                <div class="details_card-i">
+                    <img src="/image/details/05e01d021363bede7eeb43803c3377ae.png" alt="details">
+                </div>
+            </div>
+            <div class="details_card">
+                <div class="details_card-i">
+                    <img src="/image/details/f49138b498cb172d9a7dd35de16d8562.png" alt="details">
+                </div>
+                <div class="details_card-tb">
+                    <div class="details_card-t">
+                        <h2>Celebrate partieswith <span>Fried Chicken</span></h2>
+                        <p>Get the best fried chicken smeared with a lip smacking lemon chili flavor. Check out
+                            best deals for fried chicken.</p>
+                    </div>
+                    <button class="btn proceed-to-order">Proceed to order <i class="fa fa-chevron-right"></i></button>
+                </div>
+            </div>
+            <div class="details_card">
+                <div class="details_card-tb">
+                    <div class="details_card-t">
+                        <h2>Wanna eat hot & spicy <span>Pizza?</span></h2>
+                        <p>Pair up with a friend and enjoy the
+                            hot and crispy pizza pops. Try it
+                            with the best deals.</p>
+                    </div>
+                    <button class="btn proceed-to-order">Proceed to order <i class="fa fa-chevron-right"></i></button>
+                </div>
+                <div class="details_card-i">
+                    <img src="/image/details/3f4a71f66ec9a3cebe34b2d954d04e39.png" alt="details">
+                </div>
+            </div>
+        </section>
+        <section class="cta">
+            <div class="cta_text-button">
+                <h2>Are you ready to order with the best deals?</h2>
+                <button class="btn proceed-to-order">Proceed to order <i class="fa fa-chevron-right"></i></button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <article class="footer">
+            <section class="footer_cities">
+                <table>
+                    <thead>
+                        <th>Our top cities</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>San Francisco</td>
+                            <td>Miami</td>
+                            <td>San Diego</td>
+                            <td>East Bay</td>
+                        </tr>
+                        <tr>
+                            <td>Los Angeles</td>
+                            <td>Washington Dc</td>
+                            <td>Seattle</td>
+                            <td>Portland</td>
+                        </tr>
+                        <tr>
+                            <td>New York City</td>
+                            <td>Orange County</td>
+                            <td>Atlanta</td>
+                            <td>Charlotte</td>
+                        </tr>
+                        <tr>
+                            <td>Chicago</td>
+                            <td>Phoenix</td>
+                            <td>Las Vegas</td>
+                            <td>Sacramento</td>
+                        </tr>
+                        <tr>
+                            <td>Columbus</td>
+                            <td>New Mexico</td>
+                            <td>Albuquerque</td>
+                            <td>Sacramento</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section class="footer_info">
+                <div class="info">
+                    <table>
+                        <thead>
+                            <th>Company</th>
+                            <th>Contact</th>
+                            <th>Legal</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="#">About us</a></td>
+                                <td><a href="#">Help & Support</a></td>
+                                <td><a href="#">Terms & Conditions</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Team</a></td>
+                                <td><a href="#">Partner with us</a></td>
+                                <td><a href="#">Refund & Cancellation</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Careers</a></td>
+                                <td><a href="#">Ride with us</a></td>
+                                <td><a href="#">Privacy Policy</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Blog</a></td>
+                                <td><a href="#"></a></td>
+                                <td><a href="#">Cookie Policy</a></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="social">
+                    <h5>FOLLOW US</h5>
+                    <div class="social_icon">
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                    </div>
+                    <h4>Receive exclusive offers in your mailbox</h4>
+                    <div class="social_mailbox">
+                        <div class="input">
+                            <i class="fa fa-envelope"></i>
+                            <input type="email" name="email" placeholder="Enter Your email">
+                        </div>
+                        <div class="button">
+                            <button class="btn box-shadow" type="button">Subscribe</button>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <section class="footer-copy-right">
+                <div class="copy-right">
+                    <p>All rights Reserved Your company,2024</p>
+                    <p>Made With 💛 by Them Wagon</p>
+                </div>
+
+            </section>
+        </article>
+    </footer>
+</body>
+
+</html>
