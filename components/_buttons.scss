@@ -1,0 +1,19 @@
+.btn {
+    @include box-primary;
+}
+.buttons {
+    display: flex;
+    &--noborder {
+        border: none;
+    }
+    &--noback {
+        background-color: $white;
+        border: 1px solid $black;
+    }
+    &--sign {
+        background-color: $primary;
+        border: none;
+        border-radius: 12px;
+        padding: 8px 28px;
+    }
+}

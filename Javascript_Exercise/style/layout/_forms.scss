@@ -1,0 +1,114 @@
+// form validation
+
+.form-validation {
+    width: 50%;
+
+    form {
+        @include flex_c;
+        gap: 8px;
+        padding: 20px;
+
+        input {
+            @include box-primary;
+            margin-bottom: 16px;
+            border: 1px solid $primary;
+
+            &[type="submit"] {
+                @include box-primary;
+                font-size: 1rem;
+                font-weight: 400;
+                color: $secoudy;
+                background-color: $blue;
+            }
+        }
+    }
+}
+
+#message {
+    display: none;
+    background: #f1f1f1;
+    color: #000;
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+
+    & h3 {
+        @include paragraph;
+        margin-bottom: 20px;
+    }
+
+    & p {
+        @include small;
+    }
+}
+
+.valid {
+    color: $green;
+}
+
+.invalid {
+    color: $red;
+}
+
+// form validation
+
+// bmi calculation
+
+.bmi-calculation {
+    width: 90%;
+
+
+    &_forms {
+        @include flex_c;
+        gap: 20px;
+
+        &__form {
+
+
+            & input {
+                padding: 4px;
+                border-radius: 4px;
+                border: none;
+                font-size: 0.9rem;
+                font-weight: 400;
+
+                &[type="number"] {
+                    width: 15%;
+                }
+            }
+
+        }
+
+        & button {
+            width: 100%;
+            padding: 8px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            border-radius: 4px;
+            border: none;
+            color: $secoudy;
+            background-color: $blue;
+        }
+    }
+
+}
+
+
+// bmi calculation
+
+
+
+@media screen and (max-width: 600px) {
+    .form-validation {
+        width: 90%;
+
+        input {
+            padding: 4px 8px;
+            height: 20px;
+        }
+    }
+
+    #message {
+        text-wrap: wrap;
+    }
+}

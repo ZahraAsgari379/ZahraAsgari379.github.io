@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Toolbox</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <article class="toolbox-container">
+        <section class="count-down-timer-container box">
+            <div class="box_title">
+                <h1>Count Down Timer</h1>
+            </div>
+            <div class="count-down-timer box_content">
+                <p id="demo"></p>
+                <i class="fa fa-hourglass"></i>
+            </div>
+        </section>
+        <section class="bmi-calculation-container box">
+            <div class="box_title">
+                <h1>BMI Calculation</h1>
+            </div>
+            <div class="bmi-calculation box_content">
+                    
+                        <form class="bmi-calculation_forms" id="reset">
+                            <div class="bmi-calculation_forms__form">
+                                <label for="weight">Weight(kg) :</label>
+                                <input type="number" id="weight">
+                            </div>
+                            <div class="bmi-calculation_forms__form">
+                                <label for="height">Height(cm) :</label>
+                                <input type="number" id="height">
+                            </div>
+                            
+                            <button type="button" onclick="calculateBmi()">Calculate</button>
+
+
+                            <hr>
+
+
+                            <div class="bmi-calculation_forms__form">
+                                <label for="bmi">BMI :</label>
+                                <input type="text" size="24" id="bmi" readonly="readonly" />
+                            </div>
+
+                            <div class="bmi-calculation_forms__form">
+                                <label for="result">Result : </label>
+                                <input type="text" id="result" size="22" readonly="readonly" />
+                            </div>
+
+                            <button type="button" onclick="resetBtn()">Reset</button>
+
+                        </form>
+
+            </div>
+        </section>
+        <section class=" music-player-container box">
+                            <div class="box_title">
+                                <h1>Music Player</h1>
+                            </div>
+                            <div class="box_content">
+
+                                <div class="music-player">
+                                    <button id="playlist">
+                                        <i class="fa-solid fa-angle-down"></i>
+                                    </button>
+                                    <img id="song-image"
+                                        src="https://upmusics.com/wp-content/uploads/2024/01/Hame-Raftand-Cover-Final.jpg" />
+                                    <div class="song-details">
+                                        <p id="song-name">Hame Raftand</p>
+                                        <p id="song-artist">Reza Bahram</p>
+                                    </div>
+                                    <div class="player-options">
+                                        <button id="shuffle">
+                                            <i class="fa-solid fa-shuffle"></i>
+                                        </button>
+                                        <button id="prev">
+                                            <i class="fa-solid fa-backward-step"></i>
+                                        </button>
+                                        <button id="play">
+                                            <i class="fa-solid fa-play"></i>
+                                        </button>
+                                        <button id="pause" class="hide">
+                                            <i class="fa-solid fa-pause"></i>
+                                        </button>
+                                        <button id="next">
+                                            <i class="fa-solid fa-forward-step"></i>
+                                        </button>
+                                        <button id="repeat">
+                                            <i class="fa-solid fa-repeat"></i>
+                                        </button>
+                                    </div>
+                                    <audio  id="audio" preload="metadata"></audio>
+                                    <div id="progress-bar">
+                                        <div id="current-progress"></div>
+                                    </div>
+                                    <div class="time-container">
+                                        <span id="current-time">0:00</span>
+                                        <span id="max-duration">0:00</span>
+                                    </div>
+                                    <div id="playlist-container" class="hide">
+                                        <button id="close-button">
+                                            <i class="fa-solid fa-xmark"></i>
+                                        </button>
+                                        <ul id="playlist-songs"></ul>
+                                    </div>
+                                </div>
+
+                            </div>
+        </section>
+        <section class="form-validation-container box">
+            <div class="box_title">
+                <h1>Form Validation</h1>
+            </div>
+            <div class="form-validation box_content">
+                <form class="form">
+
+                    <label for="usrname">User name</label>
+                    <input type="text" id="usrname" name="usrname" required>
+
+                    <label for="email">Email address</label>
+                    <input id="email" type="email" required>
+
+                    <label for="psw">Password</label>
+                    <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                        title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                        onblur="validate()" required>
+
+                    <div id="message">
+                        <h3>Password must contain the following:</h3>
+                        <p id="letter" class="invalid">A lowercase letter</p>
+                        <p id="capital" class="invalid">A capital (uppercase) letter</p>
+                        <p id="number" class="invalid">A number</p>
+                        <p id="length" class="invalid">Minimum 8 characters</p>
+                    </div>
+
+
+
+                    <label for=" repassword">Repassword</label>
+                    <input id="repsw" type="password" onblur="validate()" required>
+
+                    <input type="submit" value="Login">
+
+
+                </form>
+            </div>
+        </section>
+    </article>
+    <script src="./app.js"></script>
+</body>
+
+</html>

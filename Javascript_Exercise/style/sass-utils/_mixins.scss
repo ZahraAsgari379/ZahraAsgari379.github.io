@@ -1,0 +1,31 @@
+@import '../sass-utils/variables';
+
+@mixin box-primary {
+    border-radius: 4px;
+    padding: 8px 16px;
+    height: 40px;
+}
+
+
+@mixin flex_c {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+@mixin  box-shadow{
+    box-shadow: 0 2px 4px rgba(109, 24, 24, 0.08),
+          0 4px 12px rgba(0, 0, 0, 0.08);
+}
+@mixin heading1 {
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+@mixin paragraph {
+    font-size: 1.1rem;
+}
+
+@mixin small {
+    font-size: 0.8rem;
+}

@@ -1,0 +1,70 @@
+body {
+  text-wrap: nowrap;
+  color: $black;
+  background-color: $primary;
+
+  .toolbox-container {
+    @include flex_c;
+    gap: 80px;
+    width: 70%;
+    padding: 60px 0;
+
+    .box {
+      width: 100%;
+      border-radius: 0 60px 0 0;
+      background-color: $secoudy;
+      @include box-shadow;
+
+      &_title {
+        border-bottom: 1px solid $primary;
+        text-align: center;
+
+        & h1 {
+          color: $primary;
+          padding: 10px;
+        }
+      }
+
+      &_content {
+        margin: 0 auto;
+
+        gap: 8px;
+        padding: 20px;
+      }
+
+      .bmi-calculation {
+        @include flex_c;
+      }
+    }
+
+    // count down timer
+
+    .count-down-timer {
+      @include flex_c;
+      width: 50%;
+      align-items: center;
+      padding: 40px 0;
+
+      & i {
+        color: $primary;
+      }
+    }
+
+    // count down timer
+
+  }
+
+  @media screen and (max-width: 600px) {
+    .toolbox-container {
+      width: 90%;
+    }
+
+    .count-down-timer {
+      width: 90%;
+
+      #demo {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
