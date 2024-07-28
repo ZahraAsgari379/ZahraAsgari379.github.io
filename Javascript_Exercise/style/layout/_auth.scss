@@ -58,7 +58,6 @@ body {
     .toolbox-container {
       width: 90%;
       display: inline;
-      text-wrap: nowrap;
     }
 
     .count-down-timer {
@@ -66,6 +65,7 @@ body {
 
       #demo {
         font-size: 0.9rem;
+        text-wrap: nowrap;
       }
     }
   }

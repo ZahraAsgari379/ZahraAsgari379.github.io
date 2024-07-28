@@ -113,11 +113,11 @@ const x = setInterval(function () {
     days +
     " days , " +
     hours +
-    " hours , " +
+    " h , " +
     minutes +
-    " minutes , " +
+    " m , " +
     seconds +
-    " seconds ";
+    " s ";
 
   if (distance < 0) {
     clearInterval(x);
