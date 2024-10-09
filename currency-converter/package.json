@@ -1,13 +1,17 @@
 {
   "name": "currency-converter",
   "private": true,
+  "homepage": "https://zahraasgari379.github.io/currency-converter",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "start": "react-scripts start",
     "build": "vite build",
+    "dev": "vite",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "currency-converter": "file:",
