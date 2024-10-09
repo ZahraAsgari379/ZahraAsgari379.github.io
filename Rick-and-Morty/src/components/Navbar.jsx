@@ -13,7 +13,7 @@ export default function Navbar({ children }) {
 }
 
 function Logo() {
-  return <div className="navbar__logo">Rick and Morty</div>;
+  return <div className="navbar__logo">Rick and Morty   </div>;
 }
 
 export function Search({ query, setQuery }) {
