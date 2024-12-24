@@ -1,7 +1,7 @@
 $(document).ready(function () {
   $.ajax({
     type: "GET",
-    url: "/inboxData.xml",
+    url: "./InboxData.xml",
     dataType: "xml",
     success: function (xml) {
       $(xml)
