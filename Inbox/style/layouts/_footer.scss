@@ -1,0 +1,21 @@
+footer {
+    margin-top: 180px;
+}
+
+.rtl {
+    direction: rtl;
+    text-align: right;
+    }
+    
+    .ltr {
+    direction: ltr;
+    text-align: left;
+    }
+    
+    select {
+    @include centered-content;
+    border: none;
+    border-radius: 4px;
+    color: var(--color-border);
+    background-color: var(--color-btn);
+    }
