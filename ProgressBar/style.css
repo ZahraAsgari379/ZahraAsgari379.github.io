@@ -1,0 +1,50 @@
+body {
+    box-sizing: border-box;
+    font-size: 28px;
+    margin: auto;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+.container  {
+    margin: auto;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 1px solid dodgerblue;
+}
+
+#progress-container {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #e0e0e0;
+}
+#progress-bar {
+    width: 0;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    background-color: #2da82d;
+}
+
+.counter {
+    padding: 4px;
+    font-size: 2.5rem;
+    border: 1px solid dodgerblue;
+    background-color: #e0e0e0;
+}
+
+#start-stop-btn {
+    width: 20%;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.25rem;
+    color: white;
+    background-color: dodgerblue;
+}
