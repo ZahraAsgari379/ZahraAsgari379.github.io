@@ -1,0 +1,14 @@
+@import '../utils/variables';
+
+.remove-btn {
+    font-size: 20px;
+    color: var(--color-red);
+}
+
+#delete-selected {
+    display: none;
+    border: none;
+    border-radius: 4px;
+    color: var(--color-white);
+    background-color: var(--color-red);
+}

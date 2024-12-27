@@ -1,0 +1,9 @@
+@import './variables';
+
+
+@mixin centered-content {
+    padding: 12px;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0 auto;
+}
