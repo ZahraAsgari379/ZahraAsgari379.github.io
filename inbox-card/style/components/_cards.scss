@@ -1,0 +1,28 @@
+@import '../utils/mixins';
+@import '../utils/variables';
+
+.card-header,
+.card-footer {
+    background-color: var(--color-primary);
+}
+
+.card-title,
+.card-text {
+    padding: 8px;
+}
+
+.select-all {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.selected-action {
+    display: none;
+}

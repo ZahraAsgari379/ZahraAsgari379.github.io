@@ -1,0 +1,15 @@
+@import "../utils/mixins";
+@import "../utils/variables";
+
+body {
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  color: var(--color-btn);
+}
