@@ -22,7 +22,7 @@ $(document).ready(function () {
             ReceiverCode
           );
           card.append(
-            '<div class="card-header"> شماره کارت: ' + (index + 1) + "</div>"
+            '<div class="card-header"> ' + (index + 1) + "</div>"
           );
           card.append('<div class="card-body">');
           card.append('<h5 class="card-title">' + SenderName + "</h5>");
