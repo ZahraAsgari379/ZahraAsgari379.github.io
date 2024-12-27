@@ -1,0 +1,26 @@
+@import '../utils/variables';
+
+.menu-btn {
+    padding: 2px 6px;
+    border-radius: 4px;
+    position: relative;
+    border: none;
+    background-color: var(--color-btn);
+
+    & i {
+        color: var(--color-border);
+    }
+}
+
+.cancel-btn {
+    width: 100%;
+    text-align: right;
+    color: var(--color-red);
+    background: transparent;
+    border: none;
+    margin-bottom: 12px;
+}
+
+.menu-btn:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}

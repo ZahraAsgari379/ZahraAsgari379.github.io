@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&family=Noto+Naskh+Arabic:wght@400..700&display=swap');
+
+
+
+body {
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.25rem;
+    header {
+        & h1 {
+            font-weight: 600;
+        }
+    }
+    th {
+        font-size: large;
+        font-weight: bold;
+    }
+    .menu-btn {
+        & i {
+            font-size: small;
+        }
+    }
+    #inbox--details {
+        line-height: 1.75rem;
+    }
+
+    }
