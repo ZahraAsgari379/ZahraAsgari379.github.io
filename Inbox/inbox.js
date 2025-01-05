@@ -6,7 +6,7 @@ $(document).ready(function () {
 function loadInboxData() {
   $.ajax({
     type: "GET",
-    url: "inboxData.xml",
+    url: "./InboxData.xml",
     dataType: "xml",
     success: function (xml) {
       var tableData = ReceiveData(xml);
