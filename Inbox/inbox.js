@@ -1,3 +1,4 @@
+
 $(document).ready(function () {
   loadInboxData();
 });
@@ -195,6 +196,11 @@ function showSelectedDetails() {
 
 // ChangeThem
 function ChangeThem(event) {
-  $("body").toggleClass("dark-theme light-theme", $(event.target).is(":checked"));
+  if ($(event.target).is(':checked')) {
+      $('body').addClass('dark-theme').removeClass('light-theme');
+  } else {
+      $('body').addClass('light-theme').removeClass('dark-theme');
+  }
 }
 
+$('#change-them').on('change', ChangeThem);
