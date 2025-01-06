@@ -1,13 +1,33 @@
-:root {
-    
-    --color-primary: burlywood; 
-    --color-secondary: bisque;
-    --color-white: rgb(255, 255, 255);
-    --color-black: rgb(0, 0, 0);
-    --color-dark: rgb(82, 58, 31);
-    --color-border: floralwhite;  
-    --color-btn: #2196f3; 
-    --color-red: rgb(194, 30, 30);
+
+$light-bg-color: #ffffff;
+$light-text-color: #000000;
+$light-table-bg-color: #f9f9f9;
+$light-button-bg-color: #e0e0e0;
+$light-button-text-color: #000000;
+$light-card-bg-color:#e0e0e0;
+$dark-bg-color: #000000;
+$dark-text-color: #ffffff;
+$dark-table-bg-color: #333333;
+$dark-button-bg-color: #555555;
+$dark-button-text-color: #ffffff;
+$dark-card-bg-color:#555555;
 
 
-}
+$themes: (
+  light: (
+    background-color: $light-bg-color,
+    text-color: $light-text-color,
+    table-bg-color: $light-table-bg-color,
+    button-bg-color: $light-button-bg-color,
+    button-text-color: $light-button-text-color,
+    card-bg-color: $light-card-bg-color,
+  ),
+  dark: (
+    background-color: $dark-bg-color,
+    text-color: $dark-text-color,
+    table-bg-color: $dark-table-bg-color,
+    button-bg-color: $dark-button-bg-color,
+    button-text-color: $dark-button-text-color,
+    card-bg-color: $dark-card-bg-color,
+  ),
+);
