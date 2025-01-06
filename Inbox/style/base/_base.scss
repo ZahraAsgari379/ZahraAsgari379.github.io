@@ -1,0 +1,11 @@
+@import "../utils/variables";
+@import "../themes/dark-theme";
+@import "../themes/light-theme";
+
+body.light-theme {
+  @extend .light-theme;
+}
+
+body.dark-theme {
+  @extend .dark-theme;
+}
