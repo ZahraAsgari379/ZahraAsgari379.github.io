@@ -5,18 +5,18 @@
     border-radius: 4px;
     position: relative;
     border: none;
-}
 
-.cancel-btn {
-    width: max-content;
-    display: flex;
-    align-items: flex-end;
-    text-align: right;
-    color: var(--color-red);
-    border: none;
-    margin-bottom: 12px;
-}
+    .cancel-btn {
+        width: max-content;
+        display: flex;
+        align-items: flex-end;
+        text-align: right;
+        color: var(--color-red);
+        border: none;
+        margin-bottom: 12px;
 
-.menu-btn:hover {
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        &:hover {
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+    }
 }
