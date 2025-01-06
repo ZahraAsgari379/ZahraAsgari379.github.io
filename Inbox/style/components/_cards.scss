@@ -2,7 +2,8 @@
 @import '../utils/variables';
 
 .context-menu,
-#inbox--details {
+#inbox--details,
+#selected-details {
     padding: 4px 8px;
     position: absolute;
  }
@@ -13,9 +14,10 @@
     cursor: pointer;
 }
 
-#inbox--details {
+#inbox--details,
+#selected-details {
     text-align: center;
-    height: 50%;
+    height: max-content;
     width: 50%;
     top: 0;
     left: 0;
