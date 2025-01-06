@@ -195,6 +195,7 @@ function showSelectedDetails() {
 });
 
 // ChangeThem
+$('body').addClass('light-theme');
 function ChangeThem(event) {
   if ($(event.target).is(':checked')) {
       $('body').addClass('dark-theme').removeClass('light-theme');
