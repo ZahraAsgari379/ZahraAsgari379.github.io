@@ -3,9 +3,24 @@
 @import "../themes/light-theme";
 
 body {
-    width: 90%;
-    height: 100vh;
-    margin: auto;
+  width: 90%;
+  height: 100vh;
+  margin: auto;
+
+  .rtl {
+  direction: rtl;
+  text-align: right;
+  }
+  
+.ltr {
+direction: ltr;
+text-align: left;
+}
+  
+
+}
+    
+
 }
 
 body.light-theme {
