@@ -8,7 +8,8 @@
 }
 
 .cancel-btn {
-    width: 100%;
+    width: max-content;
+    display: flex;
     text-align: right;
     color: var(--color-red);
     border: none;
