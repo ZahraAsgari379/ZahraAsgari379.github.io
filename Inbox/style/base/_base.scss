@@ -2,6 +2,12 @@
 @import "../themes/dark-theme";
 @import "../themes/light-theme";
 
+body {
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+}
+
 body.light-theme {
   @extend .light-theme;
 }
