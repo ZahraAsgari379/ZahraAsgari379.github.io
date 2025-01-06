@@ -16,11 +16,18 @@ $dark-theme: map-get($themes, dark);
     background-color: map-get($dark-theme, button-bg-color);
     color: map-get($dark-theme, button-text-color);
   }
+
   .context-menu,
-  .selected-details {
+  #inbox--details,
+  #selected-details {
     background-color: map-get($dark-theme, card-bg-color);
     color: map-get($dark-theme, text-color);
   }
+
+  .cancel-btn {
+    background-color: transparent;
+  }
+
 }
 
 .web-mode {
