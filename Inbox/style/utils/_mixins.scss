@@ -1,13 +1,16 @@
-@import './variables';
+@import "../utils/variables";
+@import "../themes/dark-theme";
+@import "../themes/light-theme";
 
 @mixin border {
-    border-collapse: collapse;
-    border: 1px solid var(--color-border);
+  border-collapse: collapse;
+  border: 1px solid #e0e0e0;
 }
 
 @mixin centered-content {
-    padding: 12px;
-    text-align: center;
-    vertical-align: middle;
-    margin: 0 auto;
+  padding: 12px;
+  text-align: center;
+  vertical-align: middle;
+  margin: 0 auto;
 }
+
