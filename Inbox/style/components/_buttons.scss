@@ -5,18 +5,12 @@
     border-radius: 4px;
     position: relative;
     border: none;
-    background-color: var(--color-btn);
-
-    & i {
-        color: var(--color-border);
-    }
 }
 
 .cancel-btn {
     width: 100%;
     text-align: right;
     color: var(--color-red);
-    background: transparent;
     border: none;
     margin-bottom: 12px;
 }
