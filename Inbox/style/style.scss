@@ -1,19 +1,21 @@
 // Base
-@import 'base/reset'; 
-@import 'base/typography'; 
+@import "base/reset";
+@import "base/typography";
+@import "base/base";
 
-// Components 
-@import 'components/buttons'; 
-@import 'components/cards'; 
-@import 'components/inbox';
+// Components
+@import "components/buttons";
+@import "components/cards";
+@import "components/inbox";
 
-// Layouts 
-@import 'layouts/header'; 
-@import 'layouts/footer';
+// Layouts
+@import "layouts/header";
+@import "layouts/footer";
 
-// Themes 
-@import 'themes/dark-theme'; 
+// Themes
+@import "themes/dark-theme";
+@import "themes/light-theme";
 
-// Utils 
-@import 'utils/variables';
-@import 'utils/mixins';
+// Utils
+@import "utils/variables";
+@import "utils/mixins";
