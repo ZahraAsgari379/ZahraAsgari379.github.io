@@ -1,0 +1,24 @@
+@import '../utils/variables';
+
+$light-theme: map-get($themes, light);
+
+.light-theme {
+  background-color: map-get($light-theme, background-color);
+  color: map-get($light-theme, text-color);
+
+  table {
+    background-color: map-get($light-theme, table-bg-color);
+    color: map-get($light-theme, text-color);
+  }
+
+  button,
+  select {
+    background-color: map-get($light-theme, button-bg-color);
+    color: map-get($light-theme, card-text-color);
+  }
+  .context-menu,
+  .selected-details {
+    background-color: map-get($light-theme, card-bg-color);
+    color: map-get($light-theme, text-color);
+  }
+}
