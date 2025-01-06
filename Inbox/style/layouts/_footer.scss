@@ -1,5 +1,5 @@
 footer {
-    margin-top: 180px;
+    margin-top: 100px;
 }
 
 .rtl {
@@ -14,9 +14,6 @@ footer {
     
     select {
     @include centered-content;
-    margin-bottom: 40px ;
     border: none;
     border-radius: 4px;
-    color: var(--color-border);
-    background-color: var(--color-btn);
     }
