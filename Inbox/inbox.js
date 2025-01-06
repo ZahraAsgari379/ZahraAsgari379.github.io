@@ -1,17 +1,16 @@
-
 $(document).ready(function () {
-  loadInboxData();
+  LoadInboxData();
 });
 
-// load Inbox Data
-function loadInboxData() {
+// Load Inbox Data
+function LoadInboxData() {
   $.ajax({
     type: "GET",
     url: "./InboxData.xml",
     dataType: "xml",
     success: function (xml) {
       var tableData = ReceiveData(xml);
-      createTable(tableData);
+      CreateTable(tableData);
     },
     error: function () {
       console.error("اطلاعات یافت نشد");
@@ -39,8 +38,8 @@ function ReceiveData(xml) {
   return data;
 }
 
-// create Table
-function createTable(data) {
+// Create Table
+function CreateTable(data) {
   data.forEach(function (row, index) {
     var tr = $("<tr>").data("ReceiverCode", row.ReceiverCode);
     tr.append($("<td>").text(index + 1));
@@ -55,7 +54,7 @@ function createTable(data) {
     tr.append($("<td>").text(row.FollowingType));
     tr.append(
       $("<td>").html(
-        '<button onclick="showMenu(event, this)" class="menu-btn"><i class="fa fa-bars"></i></button>'
+        '<button onclick="ShowMenu(event, this)" class="menu-btn"><i class="fa fa-bars"></i></button>'
       )
     );
 
@@ -63,15 +62,17 @@ function createTable(data) {
   });
 }
 
-// show Menu
-function showMenu(event, btn) {
+// Show Menu
+function ShowMenu(event, btn) {
+
+  $(".context-menu").remove();
   var $row = $(btn).closest("tr");
   var menu = $('<div class="context-menu">')
     .append(
-      '<button onclick="closeElement(this)" class="cancel-btn"><i class="fa fa-close" style="font-size:18px"></i></button>'
+      '<button onclick="CloseElement(this)" class="cancel-btn"><i class="fa fa-close" style="font-size:18px"></i></button>'
     )
     .append('<div class="menu-item show-row" onclick="ShowDetails(this)">مشاهده</div>')
-    .append('<div class="menu-item delete-row" onclick="deleteRow(this)">حذف</div>');
+    .append('<div class="menu-item delete-row" onclick="DeleteRow(this)">حذف</div>');
 
   $("body").append(menu);
   menu.css({
@@ -82,14 +83,14 @@ function showMenu(event, btn) {
   $(menu).data("currentRow", $row);
 }
 
-// close menu or card
-function closeElement(button) {
+// Close menu or card
+function CloseElement(button) {
   $(button).closest(".context-menu, #inbox--details, #selected-details").remove();
 }
 
 // Show Details
 function ShowDetails(button) {
-  closeDetails();
+  CloseDetails();
 
   var $row = $(button).closest(".context-menu").data("currentRow");
   var selectedData =
@@ -99,7 +100,7 @@ function ShowDetails(button) {
   
   var card = $('<div id="inbox--details" class="card">')
     .append(
-      '<div class="card-header"><button onclick="closeElement(this)" class="cancel-btn"><i class="fa fa-close" style="font-size:24px"></i></button></div>'
+      '<div class="card-header"><button onclick="CloseElement(this)" class="cancel-btn"><i class="fa fa-close" style="font-size:24px"></i></button></div>'
     )
     .append('<div class="card-body">' + selectedData + "</div>");
 
@@ -108,30 +109,30 @@ function ShowDetails(button) {
   $("body").append(card);
 }
 
-// delete Row
-function deleteRow(button) {
+// Delete Row
+function DeleteRow(button) {
   var $row = $(button).closest(".context-menu").data("currentRow");
   $row.remove();
   $(".context-menu").remove();
-  closeDetails();
-  updateIndexes();
+  CloseDetails();
+  UpdateIndexes();
 }
 
-//  update Indexes
-function updateIndexes() {
+//  Update Indexes
+function UpdateIndexes() {
   $("#inbox--table tbody tr").each(function (index) {
     $(this).find("td:first").text(index + 1);
   });
 }
 
-// close Details
-function closeDetails() {
+// Close Details
+function CloseDetails() {
   $("#inbox--details").remove();
   $("#selected-details").remove();
 }
 
 // react to selected
-function updateActionButtonVisibility() {
+function UpdateActionButtonVisibility() {
   if ($(".row-checkbox:checked").length > 0) {
     $(".action-buttons").show();
   } else {
@@ -142,31 +143,31 @@ function updateActionButtonVisibility() {
 // Select all
 $("#select-all").click(function () {
   $(".row-checkbox").prop("checked", this.checked);
-  updateActionButtonVisibility();
+  UpdateActionButtonVisibility();
 });
 
 // change at Chekbox
 $(document).on("change", ".row-checkbox", function () {
-  updateActionButtonVisibility();
+  UpdateActionButtonVisibility();
 });
 
 // Delete Selected
 $("#delete-selected").click(function () {
   $(".row-checkbox:checked").closest("tr").remove();
-  updateIndexes();
-  updateActionButtonVisibility();
-  closeDetails();
+  UpdateIndexes();
+  UpdateActionButtonVisibility();
+  CloseDetails();
 });
 
 // view Details
 $("#view-details").click(function () {
-  showSelectedDetails();
+  ShowSelectedDetails();
 });
 
 
-function showSelectedDetails() {
+function ShowSelectedDetails() {
 
-  closeDetails();
+  CloseDetails();
   var selectedData = "";
   $(".row-checkbox:checked").each(function () {
     var $row = $(this).closest("tr");
@@ -179,7 +180,7 @@ function showSelectedDetails() {
 
   var detailsCard = $('<div id="selected-details" class="card">')
     .append(
-      '<div class="card-header"><button onclick="closeElement(this)" class="cancel-btn"><i class="fa fa-close" style="font-size:24px"></i></button></div>'
+      '<div class="card-header"><button onclick="CloseElement(this)" class="cancel-btn"><i class="fa fa-close" style="font-size:24px"></i></button></div>'
     )
     .append('<div class="card-body">' + selectedData + "</div>");
 
@@ -196,6 +197,7 @@ function showSelectedDetails() {
 
 // ChangeThem
 $('body').addClass('light-theme');
+
 function ChangeThem(event) {
   if ($(event.target).is(':checked')) {
       $('body').addClass('dark-theme').removeClass('light-theme');
@@ -205,3 +207,4 @@ function ChangeThem(event) {
 }
 
 $('#change-them').on('change', ChangeThem);
+
