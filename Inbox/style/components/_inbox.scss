@@ -1,24 +1,29 @@
 @import "../utils/mixins";
 @import "../utils/variables";
 
-table {
-  margin: 0 auto;
-  width: 100%;
+body {
+  width: 90%;
+  height: 100vh;
+  margin: auto;
+
+  table {
+    margin: 0 auto;
+    width: 100%;
+    @include border;
+
+    th,
+    td {
+      @include border;
+      @include centered-content;
+    }
+
+    input[type="checkbox"] {
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+    }
+    
+  }
 }
 
-table,
-th,
-td {
-  @include border;
-}
 
-th,
-td {
-  @include centered-content;
-}
-
-input[type="checkbox"] {
-  width: 20px;
-  height: 20px;
-  cursor: pointer;
-}
