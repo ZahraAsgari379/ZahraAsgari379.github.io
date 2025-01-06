@@ -18,29 +18,13 @@ td {
   @include border;
 }
 
-th {
-  background-color: var(--color-primary);
-}
-
 th,
 td {
   @include centered-content;
-}
-
-tr:nth-child(odd) {
-  background-color: var(--color-white);
-}
-tr:nth-child(even) {
-  background-color: var(--color-secondary);
-}
-
-tr:hover {
-  background-color: var(--color-primary);
 }
 
 input[type="checkbox"] {
   width: 20px;
   height: 20px;
   cursor: pointer;
-  color: var(--color-btn);
 }
