@@ -1,5 +1,11 @@
 footer {
     margin-top: 100px;
+    
+    select {
+    @include centered-content;
+    border: none;
+    border-radius: 4px;
+    }
 }
 
 .rtl {
@@ -7,13 +13,8 @@ footer {
     text-align: right;
     }
     
-    .ltr {
-    direction: ltr;
-    text-align: left;
-    }
+.ltr {
+  direction: ltr;
+  text-align: left;
+ }
     
-    select {
-    @include centered-content;
-    border: none;
-    border-radius: 4px;
-    }
