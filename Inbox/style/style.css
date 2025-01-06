@@ -66,7 +66,7 @@ body header h1 {
 }
 body th {
   font-size: large;
-  font-weight: bold;
+  font-weight: 600;
 }
 body .menu-btn i {
   font-size: small;
@@ -89,9 +89,13 @@ body #inbox--details {
   color: #ffffff;
 }
 .dark-theme .context-menu,
-.dark-theme .selected-details {
+.dark-theme #inbox--details,
+.dark-theme #selected-details {
   background-color: #555555;
   color: #ffffff;
+}
+.dark-theme .cancel-btn {
+  background-color: transparent;
 }
 
 .web-mode {
@@ -177,11 +181,16 @@ input:checked + .slider::before {
 .light-theme button,
 .light-theme select {
   background-color: #e0e0e0;
+  color: #000000;
 }
 .light-theme .context-menu,
-.light-theme .selected-details {
+.light-theme #inbox--details,
+.light-theme #selected-details {
   background-color: #e0e0e0;
   color: #000000;
+}
+.light-theme .cancel-btn {
+  background-color: transparent;
 }
 
 .menu-btn {
@@ -218,9 +227,13 @@ input:checked + .slider::before {
   color: #ffffff;
 }
 .dark-theme .context-menu,
-.dark-theme .selected-details {
+.dark-theme #inbox--details,
+.dark-theme #selected-details {
   background-color: #555555;
   color: #ffffff;
+}
+.dark-theme .cancel-btn {
+  background-color: transparent;
 }
 
 .web-mode {
@@ -306,15 +319,21 @@ input:checked + .slider::before {
 .light-theme button,
 .light-theme select {
   background-color: #e0e0e0;
+  color: #000000;
 }
 .light-theme .context-menu,
-.light-theme .selected-details {
+.light-theme #inbox--details,
+.light-theme #selected-details {
   background-color: #e0e0e0;
   color: #000000;
 }
+.light-theme .cancel-btn {
+  background-color: transparent;
+}
 
 .context-menu,
-#inbox--details {
+#inbox--details,
+#selected-details {
   padding: 4px 8px;
   position: absolute;
 }
@@ -325,9 +344,12 @@ input:checked + .slider::before {
   cursor: pointer;
 }
 
-#inbox--details {
+#inbox--details,
+#selected-details {
   text-align: center;
-  height: 50%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   width: 50%;
   top: 0;
   left: 0;
@@ -350,9 +372,13 @@ input:checked + .slider::before {
   color: #ffffff;
 }
 .dark-theme .context-menu,
-.dark-theme .selected-details {
+.dark-theme #inbox--details,
+.dark-theme #selected-details {
   background-color: #555555;
   color: #ffffff;
+}
+.dark-theme .cancel-btn {
+  background-color: transparent;
 }
 
 .web-mode {
@@ -438,11 +464,16 @@ input:checked + .slider::before {
 .light-theme button,
 .light-theme select {
   background-color: #e0e0e0;
+  color: #000000;
 }
 .light-theme .context-menu,
-.light-theme .selected-details {
+.light-theme #inbox--details,
+.light-theme #selected-details {
   background-color: #e0e0e0;
   color: #000000;
+}
+.light-theme .cancel-btn {
+  background-color: transparent;
 }
 
 body {
@@ -529,9 +560,13 @@ select {
   color: #ffffff;
 }
 .dark-theme .context-menu,
-.dark-theme .selected-details {
+.dark-theme #inbox--details,
+.dark-theme #selected-details {
   background-color: #555555;
   color: #ffffff;
+}
+.dark-theme .cancel-btn {
+  background-color: transparent;
 }
 
 .web-mode {
@@ -617,11 +652,16 @@ input:checked + .slider::before {
 .light-theme button,
 .light-theme select {
   background-color: #e0e0e0;
+  color: #000000;
 }
 .light-theme .context-menu,
-.light-theme .selected-details {
+.light-theme #inbox--details,
+.light-theme #selected-details {
   background-color: #e0e0e0;
   color: #000000;
+}
+.light-theme .cancel-btn {
+  background-color: transparent;
 }
 
 .dark-theme, body.dark-theme {
@@ -638,9 +678,13 @@ input:checked + .slider::before {
   color: #ffffff;
 }
 .dark-theme .context-menu,
-.dark-theme .selected-details {
+.dark-theme #inbox--details,
+.dark-theme #selected-details {
   background-color: #555555;
   color: #ffffff;
+}
+.dark-theme .cancel-btn {
+  background-color: transparent;
 }
 
 .web-mode {
@@ -726,9 +770,14 @@ input:checked + .slider::before {
 .light-theme button,
 .light-theme select {
   background-color: #e0e0e0;
+  color: #000000;
 }
 .light-theme .context-menu,
-.light-theme .selected-details {
+.light-theme #inbox--details,
+.light-theme #selected-details {
   background-color: #e0e0e0;
   color: #000000;
+}
+.light-theme .cancel-btn {
+  background-color: transparent;
 }/*# sourceMappingURL=style.css.map */
