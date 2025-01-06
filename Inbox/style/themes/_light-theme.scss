@@ -14,11 +14,17 @@ $light-theme: map-get($themes, light);
   button,
   select {
     background-color: map-get($light-theme, button-bg-color);
-    color: map-get($light-theme, card-text-color);
+    color: map-get($light-theme, text-color);
   }
+
   .context-menu,
-  .selected-details {
+  #inbox--details,
+  #selected-details {
     background-color: map-get($light-theme, card-bg-color);
     color: map-get($light-theme, text-color);
+  }
+
+  .cancel-btn {
+    background-color: transparent;
   }
 }
