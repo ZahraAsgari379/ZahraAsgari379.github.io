@@ -198,14 +198,6 @@ body {
   height: 100vh;
   margin: auto;
 }
-body .rtl {
-  direction: rtl;
-  text-align: right;
-}
-body .ltr {
-  direction: ltr;
-  text-align: left;
-}
 
 .menu-btn {
   padding: 2px 6px;
@@ -548,6 +540,16 @@ footer select {
   margin: 0 auto;
   border: none;
   border-radius: 4px;
+}
+
+.rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+.ltr {
+  direction: ltr;
+  text-align: left;
 }
 
 .dark-theme, body.dark-theme {
