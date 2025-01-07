@@ -11,7 +11,7 @@ $(document).ready(function() {
 
     $("#start-stop-btn").click(function() {
         if (isRunning) {
-            // clearInterval(interval);
+            clearInterval(interval);
             $("#start-stop-btn").text("start");
             
             isRunning = false;
