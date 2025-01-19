@@ -36,13 +36,13 @@ function ReceiveData(xml) {
       ReceiverCode: $(this).find("ReceiverCode").text(),
     };
 
-    if ( index ==0 )
+    //if ( index ==0 )
       r1 = row;
     
     data.push(row);
   });
 
-  r1.SenderName = "30000000 ";
+  r1.SenderName = "30";
   var d2 = data;
   alert(d2[0].SenderName);
   
