@@ -35,6 +35,11 @@ function ReceiveData(xml) {
     };
     data.push(row);
   });
+
+var d1 = data;
+  d1[0] = null;
+  alert(data[0]);
+  
   return data;
 }
 
