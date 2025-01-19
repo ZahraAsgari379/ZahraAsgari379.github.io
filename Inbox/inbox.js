@@ -36,7 +36,7 @@ function ReceiveData(xml) {
       ReceiverCode: $(this).find("ReceiverCode").text(),
     };
 
-    //if ( index ==0 )
+    if ( index ==0 )
       r1 = row;
     
     data.push(row);
