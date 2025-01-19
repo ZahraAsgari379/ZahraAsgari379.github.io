@@ -21,6 +21,8 @@ function LoadInboxData() {
 // Receive Data 
 function ReceiveData(xml) {
   var data = [];
+  var r1 = {};
+  
   $(xml).find("Receive").each(function (index) {
     var row = {
       SenderName: $(this).find("Sender").attr("SenderName"),
@@ -33,13 +35,28 @@ function ReceiveData(xml) {
       FollowingType: $(this).find("FollowingType").text(),
       ReceiverCode: $(this).find("ReceiverCode").text(),
     };
+
+    if ( index ==0 )
+      r1 = row;
+    
     data.push(row);
   });
 
-  var d1 = data;
+  r1.SenderName = "30000000 ";
+  var d2 = data;
+  alert(d2[0].SenderName);
+  
+  //var d1 = data;
   //d1[0] = null;
-  d1[0].SenderName = "200000000000"
-  alert(data[0].SenderName);
+  //d1[0].SenderName = "200000000000"
+  //alert(data[0].SenderName);
+
+  //var i = 100;
+  //var j = i;
+  //j = 200;
+  //alert(i);
+
+  var d1 = data;
   
   return data;
 }
