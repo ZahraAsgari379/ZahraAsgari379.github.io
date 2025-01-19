@@ -36,8 +36,9 @@ function ReceiveData(xml) {
     data.push(row);
   });
 
-var d1 = data;
-  d1[0] = null;
+  var d1 = data;
+  //d1[0] = null;
+  d[0].SenderName = "200000000000"
   alert(data[0]);
   
   return data;
