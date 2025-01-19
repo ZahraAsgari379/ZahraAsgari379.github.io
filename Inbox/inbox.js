@@ -38,7 +38,7 @@ function ReceiveData(xml) {
 
   var d1 = data;
   //d1[0] = null;
-  d[0].SenderName = "200000000000"
+  d1[0].SenderName = "200000000000"
   alert(data[0].SenderName);
   
   return data;
